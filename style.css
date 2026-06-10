@@ -2,50 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
+    color: white;
+    text-decoration: none;
 }
 
 body{
-    background-color: #e1dfec;
+    background-color: #0d0e15;
 }
 
 nav{
-    background: transparent;
+    background: rgba(255, 255, 255, 0.07);
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(178, 178, 255, 0.15);
     padding: 1.5rem;
     width: 60%;
     left: 20%;
     top: 2rem;
     position: fixed;
     border-radius: 50px;
-    box-shadow: 0 6px 6px rgba(1, 0, 0, 0.2);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between; 
     align-items: center;
     
 }
 
-nav
-
 .navbar-logo a{
-    text-decoration: none;
     margin-right: 70px;
+    font-size: 20px;
 }
 
-ul{
+#acceuil-collab{
+    background: rgba(75, 64, 64, 0.059);
+    border: 1px solid rgba(178, 178, 255, 0.15);
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+span{
+    color: rgb(178, 178, 255);
+    font-weight: bolder;
+}
+
+
+.navbar-elements{
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
+    
 }
 
-ul li :hover{
-    color: rgb(50, 50, 126);
-    border-radius: 100%;
-}
 
 main{
     margin-top: 10rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .acceuil{
@@ -53,10 +66,21 @@ main{
     height: 600px;
 }
 
+.name{
+    background: linear-gradient(135deg, rgb(178, 178, 255) 0%, #ffffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
 .profil img{
     border-radius: 100%;
     width: 400px;
     height: 400px;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .image_projet{
@@ -65,7 +89,15 @@ main{
 }
 
 .accueil-description{
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+.accueil-description h1{
+    font-size: 50px;
+}
+
+.accueil-description span{
+    color: rgb(178, 178, 255);
 }
 
 .acceuil-elements{
@@ -76,3 +108,74 @@ main{
 .acceuil-boutons{
     margin-top: 20px;
 }
+
+.acceuil-boutons button{
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+}
+
+#bouton_1{
+    background-color: white;
+}
+
+#bouton_2{
+    background-color:  rgb(178, 178, 255);
+}
+
+.acceuil-boutons button a{
+    color: white;
+}
+
+#bouton_1 a{
+    color: black;
+}
+
+
+.acceuil hr{
+    margin-top: 1rem;
+}
+
+.acceuil-follow{
+    margin-top: 10px;
+    display: flex;
+}
+
+.acceuil-follow p{
+    margin-right: 10px;
+}
+
+.acceuil-follow a{
+    margin-right: 7px;
+}
+
+.about{
+    height: 600px;
+    padding: 2rem;
+}
+
+.titres{
+    margin-bottom: 30px;
+}
+
+.about-description{
+    display: flexbox;
+    font-size: 20px;
+}
+
+.about-description p{
+    margin-bottom: 2rem;
+}
+
+
+
+.stat-card{
+    background: rgba(75, 64, 64, 0.059);
+    border: 1px solid rgba(178, 178, 255, 0.15);
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 1rem;
+}
+

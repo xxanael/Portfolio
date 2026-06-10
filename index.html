@@ -11,15 +11,15 @@
     <header>
         <nav class="navbar">
             <div class="navbar-logo">
-                <a href="#accueil">xxa. nael</a>
+                <a href="#accueil"><span>xxa.</span> nael</a>
             </div>
 
             <ul class="navbar-elements">
-                <li><a href="#accueil"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#about"><i class="fa-solid fa-user"></i></a></li>
-                <li><a href="#competences"><i class="fa-solid fa-bars-progress"></i></a></li>
-                <li><a href="#projets"><i class="fa-solid fa-folder-open"></i></a></li>
-                <li><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#accueil"><i class="fa-solid fa-house"></i> Acceuil</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> À Propos</a></li>
+                <li><a href="#competences"><i class="fa-solid fa-code"></i> Compétences</a></li>
+                <li><a href="#projets"><i class="fa-solid fa-folder-open"></i> Projets</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
 
         </nav>
@@ -27,30 +27,42 @@
 
     <main>
         <section class="acceuil">
-            <div class="profil">
-                <img src="Profil.jpg" alt="une image">
-            </div>
 
             <div class="acceuil-elements">
+                <p id="acceuil-collab">👤 Disponible pour toutes collaborations...</p>
                 <div class="accueil-description">
-                    <p> Hi, it's <span>Anaël</span></p>
-                    <h3>Etudiant en cybersécurité @ HECM Bénin </h3>
-                    <p>Bienvenue dans mon monde ! Étudiant en cybersécurité, je m'intéresse de près au développement de solutions sécurisées et à la protection des systèmes. Découvrez mon univers à l'intersection du code, de l'analyse et de la défense numérique</p>
+                    <h1> Bonjour, je suis <span class="name">Anaël</span></h1>
+                    <h3>Etudiant en cybersécurité <span>@</span> HECM Bénin </h3>
+                    <p>Bienvenue dans mon monde ! Étudiant en cybersécurité, je m'intéresse de près au développement de solutions sécurisées et à la protection des systèmes. <br> Découvrez mon univers à l'intersection du code, de l'analyse et de la défense numérique</p>
                 </div>
 
                 <div class="acceuil-boutons">
-                    <button><a href="#projets">Voir mes projets</a></button>
-                    <button><a href="#contact">Me contacter</a></button>
+                    <button id="bouton_1"><a href="#projets">Voir mes projets</a></button>
+                    <button id="bouton_2"><a href="#contact">Me contacter</a></button>
                 </div>
 
+                <hr>
+
+                <div class="acceuil-follow">
+                    <p>Follow me : </p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                
+
+            </div>
+
+             <div class="profil">
+                <img src="Profil.jpg" alt="une image">
             </div>
             
         </section>
 
         <section class="about">
-            <h2><span>01.</span> A Propos</h2>
+            <h1 class="titres"><span>01.</span> A Propos</h1>
             <div class="about-description">
-                <p>Actuellement en première année de Sécurité des Systèmes Informatiques (SSI), je suis un grand passionné de cybersécurité. Mon objectif est d'apprendre à concevoir des architectures robustes et à défendre les infrastructures numériques. Pour y parvenir efficacement, j'ai développé une expertise dans le pilotage d'Intelligences Artificielles. J'utilise l'IA comme un puissant levier pour accélérer le prototypage de mes projets, optimiser mon code et approfondir ma compréhension technique. Curieux et tourné vers l'avenir, je combine rigueur académique et outils de pointe pour relever les défis de demain.</p>
+                <p>Actuellement en première année de Sécurité des Systèmes Informatiques (SSI), je suis un grand passionné de cybersécurité. <br> Mon objectif est d'apprendre à concevoir des architectures robustes et à défendre les infrastructures numériques. Pour y parvenir efficacement, <br> j'ai développé une expertise dans le pilotage d'Intelligences Artificielles. J'utilise l'IA comme un puissant levier pour accélérer le prototypage <br> de mes projets, optimiser mon code et approfondir ma compréhension technique. Curieux et tourné vers l'avenir, je combine rigueur académique <br> et outils de pointe pour relever les défis de demain.</p>
 
                 <div class="about-stats">
                     <div class="stat-card">
@@ -66,7 +78,7 @@
         </section>
 
         <section class="competences">
-            <h2><span>02.</span> Mes Compétences</h2>
+            <h1 class="titres"><span>02.</span> Mes Compétences</h1>
             <div class="skills-stats">
                 <div class="skills-card">
                    <i class="fa-brands fa-html5"></i>
@@ -127,7 +139,7 @@
         </section>
         
         <section class="projets">
-            <h2><span>03.</span> Mes Projets</h2>
+            <h1 class="titres"><span>03.</span> Mes Projets</h1>
             <div class="projets-stats">
                 <div class="projets-card">
                     <img class="image_projet" src="Projet_1.png" alt="un projet">
@@ -175,7 +187,7 @@
 
         <section class="contact">
             <form action="">
-                <h2>Ecrivez-moi</h2>
+                <h1>Ecrivez-moi</h1>
                 <input type="text" placeholder="Nom & Prenom" required>
                 <input type="email" placeholder="Email" required>
                 <textarea name="message" id="message" placeholder="Écrivez votre message ici..."></textarea>
