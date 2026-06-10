@@ -133,7 +133,10 @@ main{
 
 
 .acceuil hr{
-    margin-top: 1rem;
+    border: none; 
+    height: 1px;
+    background-color: rgba(178, 178, 255, 0.2);
+    margin: 2rem 0;
 }
 
 .acceuil-follow{
