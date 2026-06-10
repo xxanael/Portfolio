@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    background-color: #e1dfec;
+}
+
+nav{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    width: 60%;
+    left: 20%;
+    top: 2rem;
+    position: fixed;
+    border-radius: 50px;
+    box-shadow: 0 6px 6px rgba(1, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
+}
+
+nav
+
+.navbar-logo a{
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+ul li :hover{
+    color: rgb(50, 50, 126);
+    border-radius: 100%;
+}
+
+main{
+    margin-top: 10rem;
+    padding: 1rem;
+}
+
+.acceuil{
+    display: flex;
+    height: 600px;
+}
+
+.profil img{
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+
+.image_projet{
+    width: 500px;
+    height: 500px;
+}
+
+.accueil-description{
+    margin-top: 100px;
+}
+
+.acceuil-elements{
+    display: flexbox;
+    padding: 2rem;
+}
+
+.acceuil-boutons{
+    margin-top: 20px;
+}
