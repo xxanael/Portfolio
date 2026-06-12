@@ -17,7 +17,7 @@ body{
 }
 
 nav {
-    background: rgba(20, 20, 30, 0.6);
+    background: rgba(20, 20, 30, 0.447);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(178, 178, 255, 0.15);
@@ -67,6 +67,7 @@ span{
     gap: 2rem;
 }
 
+
 .navbar-elements a {
     display: flex;
     align-items: center;
@@ -75,6 +76,14 @@ span{
     transition: color 0.3s ease;
 }
 
+.navbar-elements a i{
+    transition: color 0.3s ease;
+}
+
+.navbar-elements a:hover,
+.navbar-elements a:hover i{
+    color: rgb(178, 178, 255);
+}
 
 main{
     margin-top: 10rem;
@@ -84,7 +93,7 @@ main{
 .accueil{
     display: flex;
     height: 500px;
-    scroll-margin-top: 200px; 
+    scroll-margin-top: 180px; 
 }
 
 .name{
@@ -103,6 +112,11 @@ main{
     margin-left: 2rem;
     margin-right: 2rem;
     box-shadow: 0 0 20px 1px rgb(178, 178, 255);
+    transition: transform 0.3s ease;
+}
+
+.profil img:hover{
+    transform: translateY(-3px) scale(1.05);
 }
 
 .accueil-description{
@@ -134,20 +148,39 @@ main{
 
 #bouton_1{
     background-color: white;
+    transition: all 0.3s ease;
 }
 
 #bouton_2{
     background-color:  rgb(178, 178, 255);
-}
-
-.accueil-boutons button a{
-    color: white;
+    transition: all 0.3s ease;
 }
 
 #bouton_1 a{
     color: black;
+    transition: color 0.3s ease;
 }
 
+#bouton_2 a{
+    color: white;
+    transition: color 0.3s ease;
+}
+
+#bouton_1:hover{
+    background-color:  rgb(178, 178, 255);
+}
+
+#bouton_2:hover{
+    background-color:  white;
+}
+
+#bouton_1:hover a{
+    color: white;
+}
+
+#bouton_2:hover a{
+    color: black;
+}
 
 hr{
     border: none; 
@@ -167,6 +200,11 @@ hr{
 
 .accueil-follow a{
     margin-right: 7px;
+    transition: color 0.3s ease;
+}
+
+.accueil-follow a:hover i{
+    color: rgb(178, 178, 255)
 }
 
 .about{
@@ -196,6 +234,11 @@ hr{
     height: 700px;
     border-radius: 20px;
     object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.about img:hover{
+    transform: translateY(-3px) scale(1.05);
 }
 
 .about h2{
@@ -273,6 +316,12 @@ hr{
     height:170px;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skills-card:hover{
+    border-color: rgba(178, 178, 255, 0.594);
+    transform: translateY(-3px) scale(1.1);
 }
 
 .skills-card i{
@@ -320,22 +369,31 @@ hr{
     border: 1px solid rgba(178, 178, 255, 0.15);
     border-radius: 20px;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-    
     display: flex; 
     flex-direction: column; 
-    
     width: 100%;
     max-width: 380px;
     height: 550px; 
     position: relative;
     overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+
+.projets-card:hover{
+    transform: translateY(-3px) scale(1.05);
+    border-color: rgba(178, 178, 255, 0.594);
 }
 
 
 .image_projet {
     width: 100%;
     height: 250px;
-    object-fit: cover; 
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+
+.projets-card:hover img{
+    transform: translateY(-3px) scale(1.1);
 }
 
 .projets-card h4, .projets-card p{
