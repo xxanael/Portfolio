@@ -25,6 +25,7 @@ nav{
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    z-index: 999;
 }
 
 .navbar-logo a{
@@ -82,11 +83,6 @@ main{
     box-shadow: 0 0 20px 1px rgb(178, 178, 255);
 }
 
-.image_projet{
-    width: 300px;
-    height: 300px;
-}
-
 .accueil-description{
     margin-top: 20px;
 }
@@ -131,7 +127,7 @@ main{
 }
 
 
-.acceuil hr{
+hr{
     border: none; 
     height: 1px;
     background-color: rgba(178, 178, 255, 0.2);
@@ -293,7 +289,128 @@ main{
 }
 
 .projets{
-    height: 4000px;
+    height: 1500px;
     padding: 3rem;
 }
 
+.projets-card{
+    background: rgba(132, 119, 119, 0.116);
+    border: 1px solid rgba(178, 178, 255, 0.15);
+    display: flexbox;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 600px;
+    position: relative;
+}
+
+.image_projet{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.projets-card h4, .projets-card p{
+    padding: 1rem;
+}
+
+.projets-stats-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem; 
+}
+
+.projets h4{
+    background: linear-gradient(135deg, rgb(178, 178, 255) 0%, #ffffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.boutons-projet{
+    padding: 1rem;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.boutons-projet a{
+    margin-right: 10px;
+}
+
+.contact h1{
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 4rem 1.5rem;
+}
+
+.formulaire{
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(132, 119, 119, 0.078);
+    border: 1px solid rgba(178, 178, 255, 0.15);
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.formulaire input{
+    background: rgba(132, 119, 119, 0.078);
+    border: 1px solid rgba(178, 178, 255, 0.15);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 15px;
+}
+
+
+#input_sujet{
+    width: 100%;
+}
+
+textarea{
+    background: rgba(132, 119, 119, 0.078);
+    border: 1px solid rgba(178, 178, 255, 0.15);
+    border-radius: 4px;
+    padding: 1rem;
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.formulaire a i{
+    color: rgb(178, 178, 255);
+    margin: 10px;
+    font-size: 20px;
+}
+
+.contact button{
+    margin-top: 10px;
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(178, 178, 255);
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
