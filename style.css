@@ -144,42 +144,34 @@ main{
     padding: 1rem;
     border: none;
     border-radius: 15px;
-}
-
-#bouton_1{
-    background-color: white;
-    transition: all 0.3s ease;
+    background-color:  rgb(178, 178, 255);
+    transition: all 0.5s;
+    margin-right: 10px;
 }
 
 #bouton_2{
-    background-color:  rgb(178, 178, 255);
-    transition: all 0.3s ease;
-}
-
-#bouton_1 a{
-    color: black;
-    transition: color 0.3s ease;
+    background-color: #1a1a2e;
+    border: 1px solid  rgba(178, 178, 255, 0.594);
 }
 
 #bouton_2 a{
-    color: white;
-    transition: color 0.3s ease;
+    color: rgb(178, 178, 255);
 }
 
-#bouton_1:hover{
-    background-color:  rgb(178, 178, 255);
-}
-
-#bouton_2:hover{
-    background-color:  white;
-}
-
-#bouton_1:hover a{
+.accueil-boutons button a{
     color: white;
 }
 
-#bouton_2:hover a{
-    color: black;
+button:hover{
+    box-shadow: 0 0 20px rgba(107, 107, 196, 0.897);
+    transform: scale(1.05);
+}
+
+button:active{
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
 }
 
 hr{
@@ -279,10 +271,11 @@ hr{
     border: none;
     border-radius: 15px;
     background-color:  rgb(178, 178, 255);
+    transition: all 0.5s;
 }
 
 .specification-card .information{
-    color:  rgb(178, 178, 255);
+    color: rgb(178, 178, 255);
     font-weight: 600;
 }
 
@@ -481,6 +474,11 @@ textarea{
     color: rgb(178, 178, 255);
     margin: 10px;
     font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.formulaire a i:hover{
+    color: white;
 }
 
 .contact button{
@@ -489,6 +487,7 @@ textarea{
     border: none;
     border-radius: 15px;
     background-color: rgb(178, 178, 255);
+    transition: all 0.5s;
 }
 
 footer{
