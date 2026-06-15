@@ -281,7 +281,7 @@ hr{
 }
 
 .competences{
-    height: 600px;
+    min-height: auto;
     padding: 3rem;
 }
 
@@ -492,4 +492,119 @@ footer{
     align-items: center;
     text-align: center;
     padding: 2rem;
+}
+
+
+@media (max-width: 768px){
+    nav{
+        width: 75%;
+        padding: 0.8rem 1rem;
+        top: 2rem;
+    }
+
+    .navbar-elements{
+        gap: 1rem;
+    }
+
+    .navbar-elements a{
+        font-size: 14px;
+    }
+
+    .navbar-elements a span,
+    .navbar-elements a{
+        font-size: 0;
+    }
+
+    .navbar-elements a i{
+        font-size: 18px;
+    }
+
+    main{
+        margin-top: 7rem;
+        padding: 1rem;
+    }
+
+    .accueil{
+        flex-direction: column-reverse;
+        height: auto;
+        text-align: center;
+    }
+
+    .accueil-elements{
+        padding: 1rem 0;
+    }
+
+    .accueil-description h1{
+        font-size: 25px;
+    }
+
+    .accueil-follow{
+        justify-content: center;
+    }
+
+    .profil img{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2rem auto;
+    }
+
+    .about{
+        min-height: auto;
+        padding: 2rem 2rem;
+    }
+
+    .about-description{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .about img{
+        max-width: 280px;
+    }
+
+    .specification-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .competences{
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .skills-stats-container{
+        padding: 0;
+    }
+
+    .skills-card{
+        margin-right: 0;
+        margin: 10px;
+        height: 150px;
+    }
+
+    .projets-stats-elements{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .projets-card{
+        max-width: 75%;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .formulaire{
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .formulaire-infos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulaire input{
+        width: 100%;
+    }
 }
