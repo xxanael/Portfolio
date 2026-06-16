@@ -498,12 +498,13 @@ footer{
 @media (max-width: 768px){
     nav{
         width: 95%;
-        padding: 0.8rem 1rem;
-        top: 2rem;
+        padding: 0.6rem 1rem;
+        top: 1rem;
+        justify-content: space-between;
     }
 
     .navbar-elements{
-        gap: 1rem;
+        gap: 0.8rem;
     }
 
     .navbar-elements a{
@@ -516,7 +517,7 @@ footer{
     }
 
     .navbar-elements a i{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     main{
@@ -588,7 +589,15 @@ footer{
         gap: 1.5rem;
     }
 
+    .image_projet {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
     .projets-card{
+        width: 100%;
         max-width: 100%;
         height: auto;
         padding-bottom: 60px;
